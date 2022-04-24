@@ -1,0 +1,14 @@
+/* main stylesheet */
+/* general information */
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Roboto:wght@400;700&display=swap");
+/* Variables */
+:root {
+  --colorMain: #85b4d7;
+  --colorSec: #6ec1e4; /* BUTTONS */
+  --colorBg: #fff;
+  --colorText: #000;
+  --fontMain: "Inter", sans-serif;
+  --fontSec: "Roboto", sans-serif;
+}
