@@ -12,6 +12,7 @@
   --lightGray: rgb(233, 233, 233);
   --fontMain: "Inter", sans-serif;
   --fontSec: "Roboto", sans-serif;
+  --sectionSidePadding: 1.2rem;
 }
 
 /* general */
@@ -45,6 +46,7 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
+  z-index: 100;
 }
 
 header .logo img {
@@ -77,6 +79,8 @@ header .logo {
   justify-content: space-between;
   border-bottom: solid var(--lightGray) 1px;
 }
+
+/* menu */
 
 .menu-toggle {
   width: 18px;
@@ -130,6 +134,8 @@ header .logo {
 /* menu-styling */
 header {
   position: fixed;
+  top: 0;
+  left: 0;
   background: var(--colorBg);
 }
 header nav {
@@ -146,6 +152,9 @@ header ul li {
   padding: 1rem 1.2rem;
   border-bottom: solid var(--lightGray) 1px;
   width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 header ul li a {
@@ -154,13 +163,52 @@ header ul li a {
   color: var(--colorText);
 }
 
+header ul li:after {
+  display: block;
+  height: 16px;
+  width: 16px;
+  background: url(/assets/img/icons/chevron-right.svg);
+  background-position: center;
+  background-size: contain;
+  content: "";
+  right: 0;
+  top: 0;
+}
+
+.register {
+  background: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.register a {
+  transition: all 0.3s ease-in-out;
+}
+
+.register a:hover {
+  color: rgb(167, 167, 167);
+}
+
+.register:after {
+  display: none;
+}
+
+.register a img {
+  height: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.register a img:hover {
+  opacity: 0.4;
+}
+
 .header-menu {
   display: flex;
   flex-direction: row;
 }
 
 .header-menu {
-  margin-top: 53px;
+  margin-top: 51px;
   position: absolute;
   background-color: #fff;
   width: 100%;
@@ -178,4 +226,150 @@ header ul li a {
   opacity: 1;
   display: initial;
   pointer-events: initial;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-actions img {
+  height: 16px;
+}
+
+.action-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* hero */
+
+.home-hero-wrapper {
+  width: 100%;
+  height: calc(100vh - 84px);
+  margin-top: 84px;
+  padding: var(--sectionSidePadding);
+  display: flex;
+  position: relative;
+}
+
+/* productlist */
+
+.home-productlist {
+  margin-top: 2rem;
+  padding: var(--sectionSidePadding);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.home-productlist-filters {
+  padding: 1rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+/* product card */
+.productlist-card-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.pc-wrapper {
+  background-color: #f2f2f2;
+  padding: 0rem 0 3rem 0;
+  margin: 0.5rem 0;
+}
+
+.pc-image {
+  filter: contrast(90%);
+}
+/* product card colors */
+
+.pc-colors {
+  padding: 0.5rem 1rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.pc-color {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.c-lightblue {
+  background: #43baff;
+}
+.c-red {
+  background: rgb(235, 13, 13);
+}
+
+.c-selected:before {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  content: "";
+  border: solid #000 1px;
+}
+
+/* home sections */
+
+.home-info-section {
+  padding: var(--sectionSidePadding);
+}
+
+.home-info-section p {
+  color: #999999;
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 1.5em;
+  font-family: var(--fontSec);
+  padding: 1rem 0;
+}
+
+.wide-spacing {
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.read-more {
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.read-more::after {
+  width: 100%;
+  height: 1px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: #000;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.read-more:hover::after {
+  opacity: 0.2;
+}
+
+/* home info sections hidden on mobile */
+
+.home-info-section-desktop {
+  display: none;
+  visibility: hidden;
 }
