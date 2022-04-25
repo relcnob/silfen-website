@@ -36,11 +36,29 @@
       </section>
         <section class="header-actions">
           <img src="assets/img/icons/account.svg" alt="account-icon" class="action-hidden"/>
-          <img src="assets/img/icons/search.svg" alt="search-icon" />
+          <img src="assets/img/icons/search.svg" alt="search-icon" id="searchIcon"/>
           <img src="assets/img/icons/favourites.svg" alt="favourites-icon" class="action-hidden"/>
-          <img src="assets/img/icons/basket.svg" alt="basket-icon" />
+          <img src="assets/img/icons/basket.svg" alt="basket-icon" id="basketIcon"/>
         </section>
     </div>
+    <section class="searchbar">
+      <input type="text" placeholder="Type your search here">
+      <img src="assets/img/icons/cross.svg" class="searchbar-close">
+    </section>
+    <section class="basket">
+      <div class="basket-header">
+      <h3>Cart</h3>
+      <img src="assets/img/icons/cross.svg" class="basket-close">
+    </div>
+    <div class="basket-items">
+    <span class="basket-empty">
+      <h4>Your cart is empty</h4>
+      <p>Looks like you haven't made your choice yet
+      </p>
+    </span>
+  </div>
+    </section>
+    <section class="content-overlay"></section>
     </header>
     <main>
       <!-- HERO SLIDER -->
