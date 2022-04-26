@@ -10,9 +10,12 @@
   --colorBg: #fff;
   --colorText: #000;
   --lightGray: rgb(233, 233, 233);
+  --p-gray: rgb(124, 124, 124);
   --fontMain: "Inter", sans-serif;
   --fontSec: "Roboto", sans-serif;
   --sectionSidePadding: 1.2rem;
+  --p-size: 0.8rem;
+  --h-size: 1.1rem;
 }
 
 /* general */
@@ -22,6 +25,7 @@
   margin: 0;
   padding: 0;
   font-family: var(--fontMain);
+  text-decoration: none;
 }
 
 html {
@@ -537,6 +541,14 @@ footer a {
 .pc-image {
   filter: contrast(90%);
 }
+.product-name {
+  font-size: 0.9rem;
+}
+
+.pc-price {
+  font-size: 0.9rem;
+  padding-top: 0.3rem;
+}
 /* product card colors */
 
 .pc-colors {
@@ -619,6 +631,32 @@ footer a {
   opacity: 0.2;
 }
 
+/* category section */
+.home-featured-categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.home-category-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-category-card p {
+  font-size: var(--p-size);
+  color: var(--p-gray);
+}
+.home-category-card h2 {
+  font-size: var(--h-size);
+}
+.featured-category-image {
+  margin: 1rem;
+}
 /* home info sections hidden on mobile */
 
 .home-info-section-desktop {
