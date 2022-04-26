@@ -66,6 +66,14 @@ header .logo {
   padding: 0.5rem 2rem;
   color: #fff;
   font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-bar a {
+  color: #fff;
+  font-size: 0.8rem;
+  text-decoration: none;
 }
 
 .top-bar div:nth-of-type(2) {
@@ -329,6 +337,7 @@ header ul li:after {
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.5s ease-in-out, transform 0s ease-in-out 0.5s;
+  z-index: 9;
 }
 
 .overlay-visible {
@@ -436,7 +445,7 @@ footer a {
   width: 100%;
 }
 .footer-copy span img {
-  height: 0.9rem;
+  height: 0.85rem;
   margin-right: 0.3rem;
 }
 
@@ -453,9 +462,6 @@ footer a {
 
 .footer-socials a img:hover {
   filter: invert(0.3);
-}
-
-.footer-newsletter-signup {
 }
 
 .footer-newsletter-signup form {
@@ -499,13 +505,134 @@ footer a {
 
 .home-hero-wrapper {
   width: 100%;
-  height: calc(100vh - 84px);
-  margin-top: 84px;
-  padding: var(--sectionSidePadding);
+  height: calc(100vh - 82px);
+  margin-top: 82px;
   display: flex;
   position: relative;
+  color: #fff;
 }
 
+.home-hero-wrapper:hover .arrow {
+  opacity: 1;
+}
+
+/* slider nav arrows */
+.arrow {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  border: solid 1px rgb(29, 29, 29);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.arrow img {
+  height: 1rem;
+  width: 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+.arrow-left {
+  left: 0.7rem;
+}
+
+.arrow-left img {
+  margin-left: 3px;
+}
+
+.arrow-right {
+  right: 0.7rem;
+}
+
+.arrow-right img {
+  margin-right: -1px;
+}
+
+.arrow:hover {
+  background-color: #000;
+}
+
+.arrow:hover img {
+  filter: invert(1);
+}
+
+/* slider */
+
+.slider {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  width: 100%;
+  height: calc(100vh - 82px);
+  top: 0;
+}
+
+.slider li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--sectionSidePadding);
+}
+
+.slide-visible {
+  opacity: 1 !important;
+}
+
+.slide-1 {
+  background-image: url(../assets/img/slide-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-2 {
+  background-image: url(../assets/img/slide-2.jpg);
+
+  background-size: cover;
+}
+
+.slider li h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: var(--fontMain);
+  letter-spacing: 1px;
+}
+
+.slider li h2 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: -5rem 0 5rem 0;
+}
+
+.skewed-header {
+  transform: skew(-15deg);
+}
+
+.slider li a {
+  padding: 0.8rem 2rem;
+  background-color: #fff;
+  width: fit-content;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+
+.yellow {
+  color: rgba(234, 226, 0, 0.97);
+}
 /* productlist */
 
 .home-productlist {
@@ -624,4 +751,118 @@ footer a {
 .home-info-section-desktop {
   display: none;
   visibility: hidden;
+}
+
+/* media queries  */
+@media screen and (min-width: 768px) {
+  :root {
+    --sectionSidePadding: 3rem;
+  }
+
+  footer {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-copy {
+    grid-column: 1/2;
+    margin-top: 0;
+  }
+
+  .footer-socials {
+    grid-column: 4 / 5;
+    align-content: right;
+  }
+
+  /* 768px end */
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 6rem 8rem;
+    gap: 5rem;
+  }
+
+  /* desktop menu */
+  header {
+    position: fixed;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .header-wrapper {
+    justify-content: space-between;
+    padding: 0rem 1rem;
+  }
+
+  .header-menu {
+    position: initial;
+    height: auto;
+    opacity: 1;
+    pointer-events: initial;
+    width: auto;
+    margin-top: 0;
+  }
+
+  .header-menu nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .header-menu nav ul li {
+    border-bottom: none;
+    padding: 0;
+    width: fit-content;
+    padding: 1.5rem 0;
+    border-bottom: solid 2px transparent;
+    transition: 0.3s ease-in-out;
+    margin-bottom: -1px;
+  }
+
+  .header-menu nav ul li:hover {
+    border-bottom: solid 2px #000;
+  }
+
+  .header-menu nav ul li:first-child {
+    display: none;
+  }
+
+  header ul li:after {
+    display: none;
+  }
+  .action-hidden {
+    display: block;
+    opacity: 1;
+    visibility: initial;
+  }
+  .top-bar div:nth-of-type(2) {
+    display: initial;
+  }
+  /* slider */
+  .slider li {
+    padding: 5rem;
+    transition: 0.6s ease-in-out;
+  }
+
+  .slider li h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  footer {
+    padding: 6rem 12rem;
+  }
+
+  /* menu */
+  .header-wrapper {
+    padding: 0rem 10rem;
+  }
+
+  .top-bar {
+    padding: 0.5rem 10rem;
+  }
 }
