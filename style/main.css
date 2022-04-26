@@ -840,7 +840,7 @@ footer a {
   width: fit-content;
   margin: auto;
   margin-bottom: 1rem;
-  max-height: 630px;
+  width: 100%;
 }
 
 .home-category-card a img:hover {
@@ -910,8 +910,9 @@ footer a {
   }
   .home-featured-categories {
     grid-template-columns: repeat(3, 1fr);
-    padding: 2rem 10rem;
+    padding: 2rem 5rem;
   }
+
   .instagram-post-wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -924,6 +925,7 @@ footer a {
     min-width: 100%;
     display: block;
   }
+
   /* 768px end */
 }
 
@@ -1020,6 +1022,44 @@ footer a {
   }
   .flickity-viewport {
     min-height: 500px;
+  }
+  .home-info-section-desktop {
+    display: block;
+    visibility: initial;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: var(--sectionSidePadding);
+    font-size: 1.8rem;
+  }
+
+  .home-info-section-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .home-info-section-text-wrapper p {
+    max-width: 80%;
+    margin: auto;
+    margin: 1rem 0;
+  }
+
+  .home-info-section-text-wrapper a {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    color: #fff;
+    background: var(--colorSec);
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .home-info-section-text-wrapper a:hover {
+    color: var(--colorSec);
+    background-color: var(--colorBg);
   }
 }
 
