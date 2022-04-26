@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex,nofollow" />
     <title>Silfen</title>
+    <link rel="stylesheet" href="style/flickity.css" />
     <link rel="stylesheet" href="style/main.css" />
+
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.png" />
   </head>
   <body>
@@ -16,148 +18,403 @@
         <div><a href="#">Shipping to: Denmark (DKK) </a></div>
       </section>
       <div class="header-wrapper">
-      <a href="index.html" class="logo"><img src="assets/img/silfen-logo-black.png" alt="logo" /></a>
+        <a href="index.html" class="logo"
+          ><img src="assets/img/silfen-logo-black.png" alt="logo"
+        /></a>
         <div class="menu-toggle">
-          <span class="burger">
-          </span>
+          <span class="burger"> </span>
         </div>
         <section class="header-menu">
-        <nav>
-          <ul>
-            <li class="register"><a href="">Register / Login</a><a href=""><img src="assets/img/icons/favourites.svg" alt="favourites-icon" ></a></li>
-            <li><a href="">New In</a></li> 
-            <li><a href="">Shop</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Sustainability</a></li>
-            <li><a href="">Silfen Play</a></li>
-            <li><a href="">SS22</a></li>
-          </ul>
-        </nav>
-      </section>
-        <section class="header-actions">
-          <img src="assets/img/icons/account.svg" alt="account-icon" class="action-hidden"/>
-          <img src="assets/img/icons/search.svg" alt="search-icon" id="searchIcon"/>
-          <img src="assets/img/icons/favourites.svg" alt="favourites-icon" class="action-hidden"/>
-          <img src="assets/img/icons/basket.svg" alt="basket-icon" id="basketIcon"/>
+          <nav>
+            <ul>
+              <li class="register">
+                <a href="">Register / Login</a
+                ><a href=""
+                  ><img
+                    src="assets/img/icons/favourites.svg"
+                    alt="favourites-icon"
+                /></a>
+              </li>
+              <li><a href="">New In</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Sustainability</a></li>
+              <li><a href="">Silfen Play</a></li>
+              <li><a href="">SS22</a></li>
+            </ul>
+          </nav>
         </section>
-    </div>
-    <section class="searchbar">
-      <input type="text" placeholder="Type your search here">
-      <img src="assets/img/icons/cross.svg" class="searchbar-close">
-    </section>
-    <section class="basket">
-      <div class="basket-header">
-      <h3>Cart</h3>
-      <img src="assets/img/icons/cross.svg" class="basket-close">
-    </div>
-    <div class="basket-items">
-    <span class="basket-empty">
-      <h4>Your cart is empty</h4>
-      <p>Looks like you haven't made your choice yet
-      </p>
-    </span>
-  </div>
-    </section>
-    <section class="content-overlay"></section>
+        <section class="header-actions">
+          <img
+            src="assets/img/icons/account.svg"
+            alt="account-icon"
+            class="action-hidden"
+          />
+          <img
+            src="assets/img/icons/search.svg"
+            alt="search-icon"
+            id="searchIcon"
+          />
+          <img
+            src="assets/img/icons/favourites.svg"
+            alt="favourites-icon"
+            class="action-hidden"
+          />
+          <img
+            src="assets/img/icons/basket.svg"
+            alt="basket-icon"
+            id="basketIcon"
+          />
+        </section>
+      </div>
+      <section class="searchbar">
+        <input type="text" placeholder="Type your search here" />
+        <img src="assets/img/icons/cross.svg" class="searchbar-close" />
+      </section>
+      <section class="basket">
+        <div class="basket-header">
+          <h3>Cart</h3>
+          <img src="assets/img/icons/cross.svg" class="basket-close" />
+        </div>
+        <div class="basket-items">
+          <span class="basket-empty">
+            <h4>Your cart is empty</h4>
+            <p>Looks like you haven't made your choice yet</p>
+          </span>
+        </div>
+      </section>
+      <section class="content-overlay"></section>
     </header>
     <main>
       <!-- HERO SLIDER -->
       <section class="home-hero-wrapper">
-        <a class="arrow arrow-left"><img src="assets/img/icons/arrow-left.svg" alt="arrow-left" /></a>
-        <a class="arrow arrow-right"><img src="assets/img/icons/arrow-right.svg" alt="arrow-right" /></a>
-<ul class="slider">
-        <li class="slide-1 slide-visible">
-        <h2>Welcome to Grandma's House</h2>
-        <h1>New Collection</h1>
-        <h1 class="skewed-header">Online now</h1>
-        <a href="">Shop Now</a>
-</li >
-<li class="slide-2">
-
-  <h1 class="yellow">Silfen Play</h1>
-  <h1 class="skewed-header yellow">Shop Now</h1>
-</li>
-</ul>
+        <a class="hero-arrow arrow-left"
+          ><img src="assets/img/icons/arrow-left.svg" alt="arrow-left"
+        /></a>
+        <a class="hero-arrow arrow-right"
+          ><img src="assets/img/icons/arrow-right.svg" alt="arrow-right"
+        /></a>
+        <ul class="slider">
+          <li class="slide-1 slide-visible">
+            <h2>Welcome to Grandma's House</h2>
+            <h1>New Collection</h1>
+            <h1 class="skewed-header">Online now</h1>
+            <a href="">Shop Now</a>
+          </li>
+          <li class="slide-2">
+            <h1 class="yellow">Silfen Play</h1>
+            <h1 class="skewed-header yellow">Shop Now</h1>
+          </li>
+        </ul>
       </section>
       <section class="home-productlist">
         <!-- PRODUCT LIST FILTERS -->
         <div class="home-productlist-filters">
-          <a href="#">Featured</a><a href="#">New Arrivals</a
-          ><a href="#">Bestsellers</a>
+          <a href="#" class="active-filter">Featured</a
+          ><a href="#">New Arrivals</a><a href="#">Bestsellers</a>
         </div>
         <!-- PRODUCT LIST  -->
-        <article class="productlist-card-wrapper">
+        <article class="product-card">
           <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
             <section class="pc-colors">
               <span class="pc-color c-lightblue c-selected"></span>
-              <span class="pc-color c-red"></span>
+              <!-- <span class="pc-color c-red"></span> -->
             </section>
             <section class="pc-image">
-              <a href=""><img src="assets//img/placeholder-bag.jpg" alt="product-name" /></a>
+              <a href=""
+                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
+              /></a>
             </section>
           </div>
-          <a href="#">Product name</a>
-          <span class="pc-price">123,00 DKK</span>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
+        </article>
+        <!-- copies -->
+        <article class="product-card">
+          <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
+            <section class="pc-colors">
+              <span class="pc-color c-lightblue c-selected"></span>
+              <!-- <span class="pc-color c-red"></span> -->
+            </section>
+            <section class="pc-image">
+              <a href=""
+                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
+              /></a>
+            </section>
+          </div>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
+        </article>
+        <article class="product-card">
+          <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
+            <section class="pc-colors">
+              <span class="pc-color c-lightblue c-selected"></span>
+              <!-- <span class="pc-color c-red"></span> -->
+            </section>
+            <section class="pc-image">
+              <a href=""
+                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
+              /></a>
+            </section>
+          </div>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
+        </article>
+        <article class="product-card">
+          <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
+            <section class="pc-colors">
+              <span class="pc-color c-lightblue c-selected"></span>
+              <!-- <span class="pc-color c-red"></span> -->
+            </section>
+            <section class="pc-image">
+              <a href=""
+                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
+              /></a>
+            </section>
+          </div>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
+        </article>
+        <article class="product-card">
+          <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
+            <section class="pc-colors">
+              <span class="pc-color c-lightblue c-selected"></span>
+              <!-- <span class="pc-color c-red"></span> -->
+            </section>
+            <section class="pc-image">
+              <a href=""
+                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
+              /></a>
+            </section>
+          </div>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
+        </article>
+        <article class="product-card">
+          <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
+            <section class="pc-colors">
+              <span class="pc-color c-lightblue c-selected"></span>
+              <!-- <span class="pc-color c-red"></span> -->
+            </section>
+            <section class="pc-image">
+              <a href=""
+                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
+              /></a>
+            </section>
+          </div>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
+        </article>
+        <article class="product-card">
+          <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
+            <section class="pc-colors">
+              <span class="pc-color c-lightblue c-selected"></span>
+              <!-- <span class="pc-color c-red"></span> -->
+            </section>
+            <section class="pc-image">
+              <a href=""
+                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
+              /></a>
+            </section>
+          </div>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
+        </article>
+        <article class="product-card">
+          <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
+            <section class="pc-colors">
+              <span class="pc-color c-lightblue c-selected"></span>
+              <!-- <span class="pc-color c-red"></span> -->
+            </section>
+            <section class="pc-image">
+              <a href=""
+                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
+              /></a>
+            </section>
+          </div>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
         </article>
       </section>
       <!-- hidden on mobile -->
       <section class="home-info-section-desktop">
-        <p>You can never go wrong with a classic</p>
-        <p>Your favorite SILFEN bags in high-quality calf leather ❤️</p>
-        <p>
-          All SILFEN leather is a bi-product of the meat industry. That means
-          that a SILFEN bag is a better choice
-        </p>
-        <a>Find your fav'<a>
+        <div class="home-info-section-text-wrapper">
+          <p>You can never go wrong with a classic</p>
+          <p>Your favorite SILFEN bags in high-quality calf leather ❤️</p>
+          <p>
+            All SILFEN leather is a bi-product of the meat industry. That means
+            that a SILFEN bag is a better choice
+          </p>
+          <a href="">Find your fav'</a>
+        </div>
+        <img src="assets/img/info-section-1.jpg" />
       </section>
       <section class="home-info-section-desktop">
-        <p>
-          At SILFEN, we want to make a difference. We offer gorgeous bags made from recycled materials, which helps both you and us be better, while not comprising. We think that’s pretty cool.</p>
-        <a>Sustainability<a>
+        <img src="assets/img/info-section-2.jpg" />
+        <div class="home-info-section-text-wrapper">
+          <p>
+            At SILFEN, we want to make a difference. We offer gorgeous bags made
+            from recycled materials, which helps both you and us be better,
+            while not comprising. We think that's pretty cool.
+          </p>
+          <a href="#">Sustainability</a>
+        </div>
       </section>
       <!-- hidden on mobile END -->
-      <section class="home-info-section">
-        <h3 class="wide-spacing">The Path <br>To Zero Impact</h3>
-        <p>
-          Since day one, we have launched various initiatives to keep our carbon
-          footprint to a minimum as well as making conscious decisions
-          concerning the social impact on the communities in the countries, in
-          which we operate. Explore our sustainable selection of bags made from
-          recycled nylon, vegan leather, eco-friendly or organic cotton here.
-        </p>
-        <a href="#" class="read-more">Learn more</a>
-      </section>
-      <section class="home-product-slider">
-        <section class="home-productlist">
-          <!-- PRODUCT LIST  -->
-          <article class="productlist-card-wrapper">
+      <section class="home-carousel-section">
+        <section class="home-info-section">
+          <h3 class="wide-spacing">The Path <br />To Zero Impact</h3>
+          <p>
+            Since day one, we have launched various initiatives to keep our
+            carbon footprint to a minimum as well as making conscious decisions
+            concerning the social impact on the communities in the countries, in
+            which we operate. Explore our sustainable selection of bags made
+            from recycled nylon, vegan leather, eco-friendly or organic cotton
+            here.
+          </p>
+          <a href="#" class="read-more">Learn more</a>
+        </section>
+        <section class="carousel" data-flickity='{ "draggable": 1 }'>
+          <!-- slider -->
+          <article class="product-card carousel-cell">
             <div class="pc-wrapper">
+              <div class="pc-add-to-cart">Add to cart</div>
               <section class="pc-colors">
-                <span class="pc-color"></span>
+                <span class="pc-color c-lightblue c-selected"></span>
+                <!-- <span class="pc-color c-red"></span> -->
               </section>
               <section class="pc-image">
-                <a href=""><img src="" alt="product-name" /></a>
+                <a href=""
+                  ><img
+                    src="assets//img/placeholder-bag.jpg"
+                    alt="product-name"
+                /></a>
               </section>
             </div>
-            <a href="#">Product name</a>
-            <span class="pc-price"></span>
+            <a href="#">Bumbag Kim</a>
+            <span class="pc-price">DKK 399,00</span>
+          </article>
+          <!-- copies -->
+          <article class="product-card carousel-cell">
+            <div class="pc-wrapper">
+              <div class="pc-add-to-cart">Add to cart</div>
+              <section class="pc-colors">
+                <span class="pc-color c-lightblue c-selected"></span>
+                <!-- <span class="pc-color c-red"></span> -->
+              </section>
+              <section class="pc-image">
+                <a href=""
+                  ><img
+                    src="assets//img/placeholder-bag.jpg"
+                    alt="product-name"
+                /></a>
+              </section>
+            </div>
+            <a href="#">Bumbag Kim</a>
+            <span class="pc-price">DKK 399,00</span>
+          </article>
+          <article class="product-card carousel-cell">
+            <div class="pc-wrapper">
+              <div class="pc-add-to-cart">Add to cart</div>
+              <section class="pc-colors">
+                <span class="pc-color c-lightblue c-selected"></span>
+                <!-- <span class="pc-color c-red"></span> -->
+              </section>
+              <section class="pc-image">
+                <a href=""
+                  ><img
+                    src="assets//img/placeholder-bag.jpg"
+                    alt="product-name"
+                /></a>
+              </section>
+            </div>
+            <a href="#">Bumbag Kim</a>
+            <span class="pc-price">DKK 399,00</span>
+          </article>
+          <article class="product-card carousel-cell">
+            <div class="pc-wrapper">
+              <div class="pc-add-to-cart">Add to cart</div>
+              <section class="pc-colors">
+                <span class="pc-color c-lightblue c-selected"></span>
+                <!-- <span class="pc-color c-red"></span> -->
+              </section>
+              <section class="pc-image">
+                <a href=""
+                  ><img
+                    src="assets//img/placeholder-bag.jpg"
+                    alt="product-name"
+                /></a>
+              </section>
+            </div>
+            <a href="#">Bumbag Kim</a>
+            <span class="pc-price">DKK 399,00</span>
+          </article>
+          <article class="product-card carousel-cell">
+            <div class="pc-wrapper">
+              <div class="pc-add-to-cart">Add to cart</div>
+              <section class="pc-colors">
+                <span class="pc-color c-lightblue c-selected"></span>
+                <!-- <span class="pc-color c-red"></span> -->
+              </section>
+              <section class="pc-image">
+                <a href=""
+                  ><img
+                    src="assets//img/placeholder-bag.jpg"
+                    alt="product-name"
+                /></a>
+              </section>
+            </div>
+            <a href="#">Bumbag Kim</a>
+            <span class="pc-price">DKK 399,00</span>
+          </article>
+          <article class="product-card carousel-cell">
+            <div class="pc-wrapper">
+              <div class="pc-add-to-cart">Add to cart</div>
+              <section class="pc-colors">
+                <span class="pc-color c-lightblue c-selected"></span>
+                <!-- <span class="pc-color c-red"></span> -->
+              </section>
+              <section class="pc-image">
+                <a href=""
+                  ><img
+                    src="assets//img/placeholder-bag.jpg"
+                    alt="product-name"
+                /></a>
+              </section>
+            </div>
+            <a href="#">Bumbag Kim</a>
+            <span class="pc-price">DKK 399,00</span>
           </article>
         </section>
       </section>
       <!-- featured category cards  -->
       <section class="home-featured-categories">
         <article class="home-category-card">
-          <a href="#" class="featured-category-image"></a>
+          <a href="#" class="featured-category-image"
+            ><img src="assets/img/featured-1.webp"
+          /></a>
           <h2>Shop New Arrivals</h2>
           <p>Browse through our new collection</p>
         </article>
         <article class="home-category-card">
-          <a href="#" class="featured-category-image"></a>
+          <a href="#" class="featured-category-image"
+            ><img src="assets/img/featured-2.webp"
+          /></a>
           <h2>Shop New Arrivals</h2>
           <p>Browse through our new collection</p>
         </article>
         <article class="home-category-card">
-          <a href="#" class="featured-category-image"></a>
+          <a href="#" class="featured-category-image"
+            ><img src="assets/img/featured-3.webp"
+          /></a>
           <h2>Shop New Arrivals</h2>
           <p>Browse through our new collection</p>
         </article>
@@ -166,25 +423,41 @@
       <section class="home-instagram-section">
         <h1>#SilfenVibes</h1>
         <p>
-          Share your pictures with us using the hashtag #SilfenVibes. We’ve been
-          waiting for you!​
+          Share your pictures with us using the hashtag #SilfenVibes.<br />
+          We’ve been waiting for you!​
         </p>
         <div class="instagram-post-wrapper">
-          <a><img alt="inst-post" /></a>
+          <span class="inst-post inst-post-1"
+            ><img src="assets/img/instagram-post-1.jpg"
+          /></span>
+          <span class="inst-post inst-post-2"
+            ><img src="assets/img/instagram-post-2.jpg"
+          /></span>
+          <span class="inst-post inst-post-3"
+            ><img src="assets/img/instagram-post-3.jpg"
+          /></span>
+          <span class="inst-post inst-post-4"
+            ><img src="assets/img/instagram-post-4.jpg"
+          /></span>
+          <span class="inst-post inst-post-5"
+            ><img src="assets/img/instagram-post-5.jpg"
+          /></span>
         </div>
-        <a href="#">Follow @silfenStudio</a>
+        <a href="#">Follow @SilfenStudio</a>
       </section>
     </main>
     <!-- footer -->
     <footer>
       <section class="footer-newsletter-signup">
-        <h1>COME JOIN US, SUBSCRIBE HERE!
-        </h1>
-        <p>We’ve been waiting for you! Be the first to know about new arrivals, promotional offers and much more.</p>
+        <h1>COME JOIN US, SUBSCRIBE HERE!</h1>
+        <p>
+          We’ve been waiting for you! Be the first to know about new arrivals,
+          promotional offers and much more.
+        </p>
         <form>
-        <input type="text" placeholder="Email address" name="mail" required />
-        <input type="submit" value="Sign up" />
-      </form>
+          <input type="text" placeholder="Email address" name="mail" required />
+          <input type="submit" value="Sign up" />
+        </form>
       </section>
       <section class="footer-company-info">
         <h1>Silfen Studio</h1>
@@ -192,7 +465,7 @@
           <p>Klareboderne 10, 1.</p>
           <p>1115 Copenhagen K</p>
           <p>Denmark</p>
-          <br>
+          <br />
           <p>Phone: +45 20518923</p>
           <p>VAT: DK40912320</p>
         </div>
@@ -221,12 +494,15 @@
       <section class="footer-copy">
         <p>© 2021. SILFEN STUDIO. ALL RIGHTS RESERVED</p>
         <span>
-        <a>Terms & Conditions</a>
-        <a>Privacy & Cookie Policy</a>
-          <img src="assets/img/icons/visa.svg" alt="card1" /><img src="assets/img/icons/mastercard.svg" alt="card2" /><img
-            src="assets/img/icons/amex.svg"
-            alt="card3"
-          /><img src="assets/img/icons/jcb.svg" alt="card4" /><img src="assets/img/icons/dankort.svg" alt="card5" /><img
+          <a>Terms & Conditions</a>
+          <a>Privacy & Cookie Policy</a>
+          <img src="assets/img/icons/visa.svg" alt="card1" /><img
+            src="assets/img/icons/mastercard.svg"
+            alt="card2"
+          /><img src="assets/img/icons/amex.svg" alt="card3" /><img
+            src="assets/img/icons/jcb.svg"
+            alt="card4"
+          /><img src="assets/img/icons/dankort.svg" alt="card5" /><img
             src="assets/img/icons/mobilepay.svg"
             alt="card6"
           />
@@ -234,13 +510,18 @@
       </section>
       <section class="footer-socials">
         <h1>CONNECT</h1>
-        <a href=""><img src="assets/img/icons/facebook.svg" alt="facebook" /></a>
-        <a href=""><img src="assets/img/icons/instagram.svg" alt="instagram" /></a>
+        <a href=""
+          ><img src="assets/img/icons/facebook.svg" alt="facebook"
+        /></a>
+        <a href=""
+          ><img src="assets/img/icons/instagram.svg" alt="instagram"
+        /></a>
         <a href=""><img src="assets/img/icons/youtube.svg" alt="youtube" /></a>
         <a href=""><img src="assets/img/icons/at-icon.svg" alt="website" /></a>
       </section>
     </footer>
     <script src="scripts/burger.js"></script>
     <script src="scripts/slider.js"></script>
+    <script src="scripts/flickity.pkgd.min.js"></script>
   </body>
 </html>
