@@ -940,6 +940,10 @@ footer a {
 }
 
 @media screen and (min-width: 1024px) {
+  .searchbar-visible {
+    top: 98px;
+  }
+
   footer {
     padding: 6rem 8rem;
     gap: 5rem;
