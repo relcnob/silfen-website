@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex,nofollow" />
     <title>Silfen</title>
+    <link rel="stylesheet" href="style/flickity.css" />
     <link rel="stylesheet" href="style/main.css" />
+
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.png" />
   </head>
   <body>
@@ -63,8 +65,8 @@
     <main>
       <!-- HERO SLIDER -->
       <section class="home-hero-wrapper">
-        <a class="arrow arrow-left"><img src="assets/img/icons/arrow-left.svg" alt="arrow-left" /></a>
-        <a class="arrow arrow-right"><img src="assets/img/icons/arrow-right.svg" alt="arrow-right" /></a>
+        <a class="hero-arrow arrow-left"><img src="assets/img/icons/arrow-left.svg" alt="arrow-left" /></a>
+        <a class="hero-arrow arrow-right"><img src="assets/img/icons/arrow-right.svg" alt="arrow-right" /></a>
 <ul class="slider">
         <li class="slide-1 slide-visible">
         <h2>Welcome to Grandma's House</h2>
@@ -82,22 +84,122 @@
       <section class="home-productlist">
         <!-- PRODUCT LIST FILTERS -->
         <div class="home-productlist-filters">
-          <a href="#">Featured</a><a href="#">New Arrivals</a
+          <a href="#" class="active-filter">Featured</a><a href="#">New Arrivals</a
           ><a href="#">Bestsellers</a>
         </div>
         <!-- PRODUCT LIST  -->
-        <article class="productlist-card-wrapper">
+        <article class="product-card">
           <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
             <section class="pc-colors">
               <span class="pc-color c-lightblue c-selected"></span>
-              <span class="pc-color c-red"></span>
+              <!-- <span class="pc-color c-red"></span> -->
             </section>
             <section class="pc-image">
               <a href=""><img src="assets//img/placeholder-bag.jpg" alt="product-name" /></a>
             </section>
           </div>
-          <a href="#">Product name</a>
-          <span class="pc-price">123,00 DKK</span>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
+        </article>
+        <!-- copies -->
+        <article class="product-card">
+          <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
+            <section class="pc-colors">
+              <span class="pc-color c-lightblue c-selected"></span>
+              <!-- <span class="pc-color c-red"></span> -->
+            </section>
+            <section class="pc-image">
+              <a href=""><img src="assets//img/placeholder-bag.jpg" alt="product-name" /></a>
+            </section>
+          </div>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
+        </article>
+        <article class="product-card">
+          <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
+            <section class="pc-colors">
+              <span class="pc-color c-lightblue c-selected"></span>
+              <!-- <span class="pc-color c-red"></span> -->
+            </section>
+            <section class="pc-image">
+              <a href=""><img src="assets//img/placeholder-bag.jpg" alt="product-name" /></a>
+            </section>
+          </div>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
+        </article>
+        <article class="product-card">
+          <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
+            <section class="pc-colors">
+              <span class="pc-color c-lightblue c-selected"></span>
+              <!-- <span class="pc-color c-red"></span> -->
+            </section>
+            <section class="pc-image">
+              <a href=""><img src="assets//img/placeholder-bag.jpg" alt="product-name" /></a>
+            </section>
+          </div>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
+        </article>
+        <article class="product-card">
+          <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
+            <section class="pc-colors">
+              <span class="pc-color c-lightblue c-selected"></span>
+              <!-- <span class="pc-color c-red"></span> -->
+            </section>
+            <section class="pc-image">
+              <a href=""><img src="assets//img/placeholder-bag.jpg" alt="product-name" /></a>
+            </section>
+          </div>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
+        </article>
+        <article class="product-card">
+          <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
+            <section class="pc-colors">
+              <span class="pc-color c-lightblue c-selected"></span>
+              <!-- <span class="pc-color c-red"></span> -->
+            </section>
+            <section class="pc-image">
+              <a href=""><img src="assets//img/placeholder-bag.jpg" alt="product-name" /></a>
+            </section>
+          </div>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
+        </article>
+        <article class="product-card">
+          <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
+            <section class="pc-colors">
+              <span class="pc-color c-lightblue c-selected"></span>
+              <!-- <span class="pc-color c-red"></span> -->
+            </section>
+            <section class="pc-image">
+              <a href=""><img src="assets//img/placeholder-bag.jpg" alt="product-name" /></a>
+            </section>
+          </div>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
+        </article>
+        <article class="product-card">
+          <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
+            <section class="pc-colors">
+              <span class="pc-color c-lightblue c-selected"></span>
+              <!-- <span class="pc-color c-red"></span> -->
+            </section>
+            <section class="pc-image">
+              <a href=""><img src="assets//img/placeholder-bag.jpg" alt="product-name" /></a>
+            </section>
+          </div>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
         </article>
       </section>
       <!-- hidden on mobile -->
@@ -116,6 +218,7 @@
         <a>Sustainability<a>
       </section>
       <!-- hidden on mobile END -->
+      <section class="home-carousel-section">
       <section class="home-info-section">
         <h3 class="wide-spacing">The Path <br>To Zero Impact</h3>
         <p>
@@ -127,37 +230,109 @@
         </p>
         <a href="#" class="read-more">Learn more</a>
       </section>
-      <section class="home-product-slider">
-        <section class="home-productlist">
-          <!-- PRODUCT LIST  -->
-          <article class="productlist-card-wrapper">
-            <div class="pc-wrapper">
-              <section class="pc-colors">
-                <span class="pc-color"></span>
-              </section>
-              <section class="pc-image">
-                <a href=""><img src="" alt="product-name" /></a>
-              </section>
-            </div>
-            <a href="#">Product name</a>
-            <span class="pc-price"></span>
-          </article>
-        </section>
+      <section class="carousel" data-flickity='{ "draggable": 1 }'>
+        <!-- slider -->
+        <article class="product-card carousel-cell">
+          <div class="pc-wrapper">
+            <div class="pc-add-to-cart">Add to cart</div>
+            <section class="pc-colors">
+              <span class="pc-color c-lightblue c-selected"></span>
+              <!-- <span class="pc-color c-red"></span> -->
+            </section>
+            <section class="pc-image">
+              <a href=""><img src="assets//img/placeholder-bag.jpg" alt="product-name" /></a>
+            </section>
+          </div>
+          <a href="#">Bumbag Kim</a>
+          <span class="pc-price">DKK 399,00</span>
+        </article>
+       <!-- copies -->
+       <article class="product-card carousel-cell">
+        <div class="pc-wrapper">
+          <div class="pc-add-to-cart">Add to cart</div>
+          <section class="pc-colors">
+            <span class="pc-color c-lightblue c-selected"></span>
+            <!-- <span class="pc-color c-red"></span> -->
+          </section>
+          <section class="pc-image">
+            <a href=""><img src="assets//img/placeholder-bag.jpg" alt="product-name" /></a>
+          </section>
+        </div>
+        <a href="#">Bumbag Kim</a>
+        <span class="pc-price">DKK 399,00</span>
+      </article>
+      <article class="product-card carousel-cell">
+        <div class="pc-wrapper">
+          <div class="pc-add-to-cart">Add to cart</div>
+          <section class="pc-colors">
+            <span class="pc-color c-lightblue c-selected"></span>
+            <!-- <span class="pc-color c-red"></span> -->
+          </section>
+          <section class="pc-image">
+            <a href=""><img src="assets//img/placeholder-bag.jpg" alt="product-name" /></a>
+          </section>
+        </div>
+        <a href="#">Bumbag Kim</a>
+        <span class="pc-price">DKK 399,00</span>
+      </article>
+      <article class="product-card carousel-cell">
+        <div class="pc-wrapper">
+          <div class="pc-add-to-cart">Add to cart</div>
+          <section class="pc-colors">
+            <span class="pc-color c-lightblue c-selected"></span>
+            <!-- <span class="pc-color c-red"></span> -->
+          </section>
+          <section class="pc-image">
+            <a href=""><img src="assets//img/placeholder-bag.jpg" alt="product-name" /></a>
+          </section>
+        </div>
+        <a href="#">Bumbag Kim</a>
+        <span class="pc-price">DKK 399,00</span>
+      </article>
+      <article class="product-card carousel-cell">
+        <div class="pc-wrapper">
+          <div class="pc-add-to-cart">Add to cart</div>
+          <section class="pc-colors">
+            <span class="pc-color c-lightblue c-selected"></span>
+            <!-- <span class="pc-color c-red"></span> -->
+          </section>
+          <section class="pc-image">
+            <a href=""><img src="assets//img/placeholder-bag.jpg" alt="product-name" /></a>
+          </section>
+        </div>
+        <a href="#">Bumbag Kim</a>
+        <span class="pc-price">DKK 399,00</span>
+      </article>
+      <article class="product-card carousel-cell">
+        <div class="pc-wrapper">
+          <div class="pc-add-to-cart">Add to cart</div>
+          <section class="pc-colors">
+            <span class="pc-color c-lightblue c-selected"></span>
+            <!-- <span class="pc-color c-red"></span> -->
+          </section>
+          <section class="pc-image">
+            <a href=""><img src="assets//img/placeholder-bag.jpg" alt="product-name" /></a>
+          </section>
+        </div>
+        <a href="#">Bumbag Kim</a>
+        <span class="pc-price">DKK 399,00</span>
+      </article>
       </section>
+    </section>
       <!-- featured category cards  -->
       <section class="home-featured-categories">
         <article class="home-category-card">
-          <a href="#" class="featured-category-image"></a>
+          <a href="#" class="featured-category-image"><img src="assets/img/featured-1.webp"></a>
           <h2>Shop New Arrivals</h2>
           <p>Browse through our new collection</p>
         </article>
         <article class="home-category-card">
-          <a href="#" class="featured-category-image"></a>
+          <a href="#" class="featured-category-image"><img src="assets/img/featured-2.webp"></a>
           <h2>Shop New Arrivals</h2>
           <p>Browse through our new collection</p>
         </article>
         <article class="home-category-card">
-          <a href="#" class="featured-category-image"></a>
+          <a href="#" class="featured-category-image"><img src="assets/img/featured-3.webp"></a>
           <h2>Shop New Arrivals</h2>
           <p>Browse through our new collection</p>
         </article>
@@ -166,13 +341,17 @@
       <section class="home-instagram-section">
         <h1>#SilfenVibes</h1>
         <p>
-          Share your pictures with us using the hashtag #SilfenVibes. We’ve been
+          Share your pictures with us using the hashtag #SilfenVibes.<br> We’ve been
           waiting for you!​
         </p>
         <div class="instagram-post-wrapper">
-          <a><img alt="inst-post" /></a>
+          <span class="inst-post inst-post-1"><img src="assets/img/instagram-post-1.jpg"></span>
+          <span class="inst-post inst-post-2"><img src="assets/img/instagram-post-2.jpg"></span>
+          <span class="inst-post inst-post-3"><img src="assets/img/instagram-post-3.jpg"></span>
+          <span class="inst-post inst-post-4"><img src="assets/img/instagram-post-4.jpg"></span>
+          <span class="inst-post inst-post-5"><img src="assets/img/instagram-post-5.jpg"></span>
         </div>
-        <a href="#">Follow @silfenStudio</a>
+        <a href="#">Follow @SilfenStudio</a>
       </section>
     </main>
     <!-- footer -->
@@ -242,5 +421,6 @@
     </footer>
     <script src="scripts/burger.js"></script>
     <script src="scripts/slider.js"></script>
+    <script src="scripts/flickity.pkgd.min.js"></script>
   </body>
 </html>
