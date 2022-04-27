@@ -1,0 +1,144 @@
+/* product card info */
+.pc-pic {
+  margin-top: 6rem;
+}
+.pc-specifics {
+  padding-top: 1rem;
+}
+.productlist-card-wrapper {
+  margin: 1rem;
+}
+.pc-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+.product-name {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+}
+.pc-price {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.pc-description {
+  margin-top: 1rem;
+}
+.favourites-icon {
+  width: 1.1rem;
+}
+.favourites-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+  color: black;
+  font-size: 0.9rem;
+}
+
+.quantity-button {
+  border: 1px solid rgba(131, 131, 131, 0.315);
+  padding: 0.5rem 0.7rem;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.purchase-wrapper {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.cart-button {
+  background-color: black;
+  color: white;
+  padding: 0.6rem 6rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.quantity-button input[type="number"] {
+  -moz-appearance: textfield;
+  border: none;
+  text-align: center;
+  width: 24px;
+}
+.pc-color-selection {
+  margin-top: 2rem;
+}
+.pc-color-selection p {
+  font-size: 0.9;
+  font-weight: 600;
+}
+
+/* accordion */
+
+.acc-wrapper {
+  margin-top: 2rem;
+  max-width: 1130px;
+  margin: auto 1rem;
+  display: block;
+  margin: 2rem 1rem;
+}
+
+.acc-header {
+  width: 100%;
+  padding: 1rem;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgb(179, 176, 176);
+}
+
+.active-acc {
+  background: white;
+}
+
+.acc-header:after {
+  height: 0.7rem;
+  width: 0.7rem;
+  display: block;
+  content: "";
+  background-image: url(../assets/img/icons/cross.svg);
+  transition: 0.3s ease-in-out;
+}
+
+.active-acc:after {
+  background-image: url(../assets/img/icons/line.svg);
+}
+
+.acc-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  padding: 0rem 1rem;
+  background-color: white;
+}
+
+.acc-panel h3 {
+  margin: 1rem 0;
+}
+
+.acc-panel p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.51);
+}
+
+.spacer {
+  height: 1rem;
+  width: 100%;
+  display: block;
+}
