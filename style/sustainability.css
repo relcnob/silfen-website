@@ -28,7 +28,7 @@ main {
   align-items: center;
   flex-direction: column;
   margin: 2rem 0;
-  text-align: center;
+  text-align: left;
 }
 
 .sus-content-wrapper h1 {
@@ -37,6 +37,11 @@ main {
   margin-bottom: 1rem;
 }
 
+.sus-header-section p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
 /* accordion */
 
 .acc-wrapper {
@@ -82,15 +87,91 @@ main {
   overflow: hidden;
   transition: 0.5s ease-in-out;
   padding: 0rem 1rem;
-  background-color: #f2f2f2;
+  background-color: hsl(205, 10%, 98%);
 }
 
 .acc-panel h3 {
-  margin-top: 1rem;
+  margin: 1rem 0;
+}
+
+.acc-panel p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 0.9rem;
 }
 
 .spacer {
   height: 1rem;
   width: 100%;
   display: block;
+}
+
+.acc-materials {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.acc-materials span {
+  grid-column: 1/-1;
+}
+
+.acc-materials h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.acc-materials h4:before {
+  content: "";
+  height: 1.3rem;
+  width: 1.3rem;
+  display: block;
+  margin-right: 0.5rem;
+  opacity: 1;
+}
+
+.acc-materials div:first-of-type h4:before {
+  background-image: url(../assets/img/icons/cotton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.acc-materials div:nth-of-type(2) h4:before {
+  background-image: url(../assets/img/icons/leather.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.acc-materials div:nth-of-type(3) h4:before {
+  background-image: url(../assets/img/icons/vegan.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.acc-materials div:nth-of-type(4) h4:before {
+  background-image: url(../assets/img/icons/rpet.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.acc-materials p {
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  .acc-materials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1130px) {
+  /* .acc-materials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  } */
 }
