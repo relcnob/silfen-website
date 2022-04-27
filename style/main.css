@@ -6,6 +6,7 @@
 /* Variables */
 :root {
   --colorMain: #85b4d7;
+  --colorMain75: hsl(205, 65%, 78%);
   --colorSec: #6ec1e4; /* BUTTONS */
   --colorBg: #fff;
   --colorText: #000;
@@ -990,6 +991,10 @@ footer a {
 
   .header-menu nav ul li:hover {
     border-bottom: solid 2px #000;
+  }
+
+  .active-menu-item {
+    border-bottom: solid 2px #000 !important;
   }
 
   .header-menu nav ul li:first-child {
