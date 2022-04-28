@@ -284,4 +284,7 @@ h3 {
   .color2 {
     left: 67.5%;
   }
+  h3 {
+    margin-left: 2rem;
+  }
 }
