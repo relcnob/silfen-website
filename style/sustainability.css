@@ -9,11 +9,30 @@ main {
   width: 100%;
   display: block;
   overflow: hidden;
+  position: relative;
+  height: 92vh;
 }
 
-.sus-video-wrapper video {
+.sus-video-wrapper:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "We dont only focus on the surface";
+  background-color: rgba(3, 8, 17, 0.2);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.sus-video-wrapper iframe {
   width: 100%;
   aspect-ratio: 16/9;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 .sus-content-wrapper {
