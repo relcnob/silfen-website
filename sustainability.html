@@ -14,7 +14,12 @@
     <header class="sticky">
       <!-- TOP PAGE BAR -->
       <section class="top-bar">
-        <div>Expect longer delivery during easter</div>
+        <div class="top-bar-slider">
+          <div>We ship worldwide</div>
+          <div>Expect longer delivery during easter</div>
+          <div>Share your pictures with us using hashtag #SilfenVibes.</div>
+          <div>Free shipping in Denmark</div>
+        </div>
         <div><a href="#">Shipping to: Denmark (DKK) </a></div>
       </section>
       <div class="header-wrapper">
@@ -89,9 +94,15 @@
     </header>
     <main>
       <section class="sus-video-wrapper">
-        <video autoplay loop muted playsinline>
-          <source src="assets/vid/sus-vid.mp4" type="video/mp4" />
-        </video>
+        <iframe
+          width="100%"
+          height="auto"
+          src="https://www.youtube.com/embed/gBVy7bBuvAI?autoplay=1&controls=0&loop=1&playlist=gBVy7bBuvAI&showinfo=0&modestbranding=1&disablekb=1&enablejsapi=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </section>
       <section class="sus-content-wrapper">
         <div class="sus-header-section">
@@ -127,49 +138,55 @@
         </div>
         <div class="acc-wrapper">
           <h2 class="acc-header">WATER</h2>
-          <section class="acc-panel">
-            <h3>
-              The fashion industry is one of the most polluting industries
-              worldwide
-            </h3>
-            <p>
-              One of the biggest issues is the use and contamination of drinking
-              water. We try to minimize the water consumption in our production
-              in an effort to decrease its negative impact on the environment
-              and to ensure local access to clean water.
-            </p>
-            <p>
-              All cotton used for production of SILFEN bags is either made from
-              eco-friendly or organic cotton. This means that there is much less
-              consumption of water throughout production and treatment of our
-              cotton, than conventional cotton products.
-            </p>
-            <p>
-              In 2020 we introduced a new collection of bags made from a new
-              material; rPET or Recycled Polyethylene Terephthalate. This
-              recycled material is primarily made from plastic waste collected
-              from the oceans, or from recycled plastic bottles gathered from
-              all over the world.
-            </p>
+          <section class="acc-panel acc-shipping">
+            <div>
+              <h3>
+                The fashion industry is one of the most polluting industries
+                worldwide
+              </h3>
+              <p>
+                One of the biggest issues is the use and contamination of
+                drinking water. We try to minimize the water consumption in our
+                production in an effort to decrease its negative impact on the
+                environment and to ensure local access to clean water.
+              </p>
+              <p>
+                All cotton used for production of SILFEN bags is either made
+                from eco-friendly or organic cotton. This means that there is
+                much less consumption of water throughout production and
+                treatment of our cotton, than conventional cotton products.
+              </p>
+              <p>
+                In 2020 we introduced a new collection of bags made from a new
+                material; rPET or Recycled Polyethylene Terephthalate. This
+                recycled material is primarily made from plastic waste collected
+                from the oceans, or from recycled plastic bottles gathered from
+                all over the world.
+              </p>
+            </div>
+            <div id="water-chart"></div>
             <span class="spacer"></span>
           </section>
           <h2 class="acc-header">SHIPPING</h2>
-          <section class="acc-panel">
-            <h3>
-              We are aware of the major impact that the shipping industry have
-              on our planet.
-            </h3>
-            <p>
-              Because of this, we strive to choose environmental-friendly
-              shipping options when applicable. We are in close contact with
-              other brands in our aim to minimize shipping as much as possible –
-              by joining forces.
-            </p>
-            <p>
-              We strive to ship as much as possible in bulk – mostly by sea or
-              train. These are the most environmentally friendly modes of
-              shipping, reducing polluting emissions.
-            </p>
+          <section class="acc-panel acc-shipping">
+            <div>
+              <h3>
+                We are aware of the major impact that the shipping industry have
+                on our planet.
+              </h3>
+              <p>
+                Because of this, we strive to choose environmental-friendly
+                shipping options when applicable. We are in close contact with
+                other brands in our aim to minimize shipping as much as possible
+                – by joining forces.
+              </p>
+              <p>
+                We strive to ship as much as possible in bulk – mostly by sea or
+                train. These are the most environmentally friendly modes of
+                shipping, reducing polluting emissions.
+              </p>
+            </div>
+            <div id="shipping-chart"></div>
             <span class="spacer"></span>
           </section>
           <h2 class="acc-header">WORKING CONDITIONS</h2>
@@ -367,6 +384,7 @@
     </footer>
     <script src="scripts/burger.js"></script>
     <script src="scripts/accordion.js"></script>
-    <script src="scripts/api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="scripts/sustainability.js"></script>
   </body>
 </html>
