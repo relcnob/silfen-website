@@ -81,6 +81,170 @@ header .logo {
   display: none;
 }
 
+.top-bar-slider {
+  display: flex;
+  width: fit-content;
+  height: 16px;
+}
+
+.top-bar-slider div {
+  left: 0;
+  top: 8px;
+  display: flex;
+  position: absolute;
+  padding: 0 30px;
+}
+.top-bar-slider div:first-of-type {
+  animation: cycleOne 20s ease-in-out infinite;
+}
+.top-bar-slider div:nth-of-type(2) {
+  animation: cycleTwo 20s ease-in-out infinite;
+}
+.top-bar-slider div:nth-of-type(3) {
+  animation: cycleThree 20s ease-in-out infinite;
+}
+.top-bar-slider div:nth-of-type(4) {
+  animation: cycleFour 20s ease-in-out infinite;
+}
+
+@keyframes cycleOne {
+  0% {
+    left: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  20% {
+    left: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+
+  25% {
+    left: -500px;
+    opacity: 0;
+    z-index: 0;
+  }
+  26% {
+    left: -500px;
+    opacity: 0;
+    z-index: -1;
+  }
+  27% {
+    left: 500px;
+    opacity: 0;
+    z-index: -1;
+  }
+  95% {
+    left: 500px;
+    opacity: 0;
+    z-index: 0;
+  }
+  100% {
+    left: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+}
+
+@keyframes cycleTwo {
+  0% {
+    left: 500px;
+    opacity: 0;
+  }
+  20% {
+    left: 500px;
+    opacity: 0;
+  }
+  25% {
+    left: 0px;
+    opacity: 1;
+  }
+  45% {
+    left: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  50% {
+    left: -500px;
+    opacity: 0;
+    z-index: 0;
+  }
+  51% {
+    left: 500px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    left: 500px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes cycleThree {
+  0% {
+    left: 500px;
+    opacity: 0;
+  }
+  45% {
+    left: 500px;
+    opacity: 0;
+    z-index: -1;
+  }
+  50% {
+    left: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  70% {
+    left: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  75% {
+    left: -500px;
+    opacity: 0;
+    z-index: 0;
+  }
+  76% {
+    left: 500px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    left: 500px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycleFour {
+  0% {
+    left: 500px;
+    opacity: 0;
+    z-index: -1;
+  }
+  70% {
+    left: 500px;
+    opacity: 0;
+    z-index: 0;
+  }
+  75% {
+    left: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  95% {
+    left: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  100% {
+    left: -500px;
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
 .header-wrapper {
   padding: 1rem 1rem;
   position: relative;
