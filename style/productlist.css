@@ -1,0 +1,323 @@
+:root {
+  --productListPadding: 1rem;
+}
+
+#product-list {
+  margin-top: 75px;
+  padding: 1rem var(--productListPadding);
+}
+
+.pl-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.pl-category {
+  margin: auto;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.pl-filters {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.pl-filters select {
+  width: fit-content;
+  outline: none;
+  border: none;
+  font-family: var(--fontMain);
+  font-size: 0.9rem;
+  max-width: 130px;
+}
+
+.pl-filter-wrapper {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  border: solid 1px #dadada;
+  padding: 0rem;
+  opacity: 0;
+  display: grid;
+  height: 0;
+  transition: 0.5s ease-in-out;
+  transform: translateY(-10px);
+}
+
+.pl-filter-wrapper-toggled {
+  opacity: 1;
+  height: auto;
+  padding: 1.2rem;
+  transform: translateY(0px);
+}
+
+.pl-filter-wrapper h2 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
+  text-shadow: 0px 0px 0.5px;
+}
+
+.pl-filter-wrapper ul {
+  overflow-y: scroll;
+  height: 180px;
+}
+
+.pl-filter-wrapper ul li {
+  padding: 0.25rem 0;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.pl-filter-wrapper ul li:hover {
+  color: #999999;
+}
+
+.pl-price-range {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  margin-top: 1.2rem;
+}
+.pl-price-range input {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.pl-price-outputs {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+
+#min-price::before {
+  content: "Min Price: ";
+  color: #999999;
+}
+
+#max-price::before {
+  content: "Max Price: ";
+  color: #999999;
+}
+
+.pl-filter-colors li:before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  display: block;
+  margin-right: 8px;
+}
+
+.pl-filter-colors li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#pl-filters-expand {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#pl-filters-expand::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url(../assets/img/icons/expand.svg);
+  background-position: center;
+  background-size: cover;
+  display: block;
+  margin-left: 4px;
+}
+
+/* colors for filter list */
+
+.c-70s::before {
+  background-color: #a56126;
+}
+
+.c-angora::before {
+  background-color: #e2e2d0;
+}
+
+.c-apricot::before {
+  background-color: #f28837;
+}
+
+.c-avocado::before {
+  background-color: #39d39a;
+}
+
+.c-avocadoSushi::before {
+  background-color: #49ed62;
+}
+
+.c-balladBlue::before {
+  background-color: #98cbd3;
+}
+
+.c-balticSea::before {
+  background-color: #79b5d8;
+}
+
+.c-bellflower::before {
+  background-color: #892fe2;
+}
+
+.c-blueBell::before {
+  background-color: #4ab3f9;
+}
+
+.c-blueberry::before {
+  background-color: #3f609e;
+}
+
+.c-cadet::before {
+  background-color: #93a9bf;
+}
+
+.c-cat::before {
+  background-color: #ddceb1;
+}
+
+.c-chateauRose::before {
+  background-color: #ff0ac1;
+}
+
+.c-dinerBlue::before {
+  background-color: #94cee8;
+}
+
+.c-fairytale::before {
+  background-color: #f9aefc;
+}
+
+.c-flame::before {
+  background-color: #dd3333;
+}
+
+.c-iconDots::before {
+  background-color: #ff6b21;
+}
+
+.c-kiwi::before {
+  background-color: #97ef3e;
+}
+
+.c-lemonPie::before {
+  background-color: #eeee22;
+}
+
+.c-mint::before {
+  background-color: #48eaaf;
+}
+
+.c-rose::before {
+  background-color: #ffd3f1;
+}
+
+.c-sunset::before {
+  background-color: #f24b21;
+}
+/* colors end */
+/* hiding range styling */
+
+input[type="range"] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* custom styling */
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 12px;
+  width: 12px;
+  border-radius: 3px;
+  background: #000000;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: -5px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 12px;
+  width: 12px;
+  border-radius: 3px;
+  background: #000000;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  background: #000000;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --productListPadding: 3rem;
+  }
+
+  .pl-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .pl-filter-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --productListPadding: 5rem;
+  }
+  #product-list {
+    margin-top: 100px;
+  }
+  .pl-wrapper {
+    gap: 1rem;
+  }
+  .pl-filter-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    --productListPadding: 14rem;
+  }
+}
