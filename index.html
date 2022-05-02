@@ -123,135 +123,27 @@
           ><a href="#">New Arrivals</a><a href="#">Bestsellers</a>
         </div>
         <!-- PRODUCT LIST  -->
-        <article class="product-card">
-          <div class="pc-wrapper">
-            <div class="pc-add-to-cart">Add to cart</div>
-            <section class="pc-colors">
-              <span class="pc-color c-lightblue c-selected"></span>
-              <!-- <span class="pc-color c-red"></span> -->
-            </section>
-            <section class="pc-image">
-              <a href=""
-                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
-              /></a>
-            </section>
-          </div>
-          <a href="productPage.html">Bumbag Kim</a>
-          <span class="pc-price">DKK 399,00</span>
-        </article>
-        <!-- copies -->
-        <article class="product-card">
-          <div class="pc-wrapper">
-            <div class="pc-add-to-cart">Add to cart</div>
-            <section class="pc-colors">
-              <span class="pc-color c-lightblue c-selected"></span>
-              <!-- <span class="pc-color c-red"></span> -->
-            </section>
-            <section class="pc-image">
-              <a href=""
-                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
-              /></a>
-            </section>
-          </div>
-          <a href="#">Bumbag Kim</a>
-          <span class="pc-price">DKK 399,00</span>
-        </article>
-        <article class="product-card">
-          <div class="pc-wrapper">
-            <div class="pc-add-to-cart">Add to cart</div>
-            <section class="pc-colors">
-              <span class="pc-color c-lightblue c-selected"></span>
-              <!-- <span class="pc-color c-red"></span> -->
-            </section>
-            <section class="pc-image">
-              <a href=""
-                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
-              /></a>
-            </section>
-          </div>
-          <a href="#">Bumbag Kim</a>
-          <span class="pc-price">DKK 399,00</span>
-        </article>
-        <article class="product-card">
-          <div class="pc-wrapper">
-            <div class="pc-add-to-cart">Add to cart</div>
-            <section class="pc-colors">
-              <span class="pc-color c-lightblue c-selected"></span>
-              <!-- <span class="pc-color c-red"></span> -->
-            </section>
-            <section class="pc-image">
-              <a href=""
-                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
-              /></a>
-            </section>
-          </div>
-          <a href="#">Bumbag Kim</a>
-          <span class="pc-price">DKK 399,00</span>
-        </article>
-        <article class="product-card">
-          <div class="pc-wrapper">
-            <div class="pc-add-to-cart">Add to cart</div>
-            <section class="pc-colors">
-              <span class="pc-color c-lightblue c-selected"></span>
-              <!-- <span class="pc-color c-red"></span> -->
-            </section>
-            <section class="pc-image">
-              <a href=""
-                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
-              /></a>
-            </section>
-          </div>
-          <a href="#">Bumbag Kim</a>
-          <span class="pc-price">DKK 399,00</span>
-        </article>
-        <article class="product-card">
-          <div class="pc-wrapper">
-            <div class="pc-add-to-cart">Add to cart</div>
-            <section class="pc-colors">
-              <span class="pc-color c-lightblue c-selected"></span>
-              <!-- <span class="pc-color c-red"></span> -->
-            </section>
-            <section class="pc-image">
-              <a href=""
-                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
-              /></a>
-            </section>
-          </div>
-          <a href="#">Bumbag Kim</a>
-          <span class="pc-price">DKK 399,00</span>
-        </article>
-        <article class="product-card">
-          <div class="pc-wrapper">
-            <div class="pc-add-to-cart">Add to cart</div>
-            <section class="pc-colors">
-              <span class="pc-color c-lightblue c-selected"></span>
-              <!-- <span class="pc-color c-red"></span> -->
-            </section>
-            <section class="pc-image">
-              <a href=""
-                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
-              /></a>
-            </section>
-          </div>
-          <a href="#">Bumbag Kim</a>
-          <span class="pc-price">DKK 399,00</span>
-        </article>
-        <article class="product-card">
-          <div class="pc-wrapper">
-            <div class="pc-add-to-cart">Add to cart</div>
-            <section class="pc-colors">
-              <span class="pc-color c-lightblue c-selected"></span>
-              <!-- <span class="pc-color c-red"></span> -->
-            </section>
-            <section class="pc-image">
-              <a href=""
-                ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
-              /></a>
-            </section>
-          </div>
-          <a href="#">Bumbag Kim</a>
-          <span class="pc-price">DKK 399,00</span>
-        </article>
+
+        <template class="template-products">
+          <article class="product-card">
+            <div class="pc-wrapper">
+              <div class="pc-add-to-cart">Add to cart</div>
+              <section class="pc-colors">
+                <span class="pc-color c-lightblue c-selected"></span>
+                <!-- <span class="pc-color c-red"></span> -->
+              </section>
+              <section class="pc-image">
+                <a href=""
+                  ><img
+                    src="assets//img/placeholder-bag.jpg"
+                    alt="product-name"
+                /></a>
+              </section>
+            </div>
+            <a class="title-link" href="productPage.html">Bumbag Kim</a>
+            <span class="pc-price">DKK 399,00</span>
+          </article>
+        </template>
       </section>
       <!-- hidden on mobile -->
       <section class="home-info-section-desktop">
@@ -308,7 +200,7 @@
                 /></a>
               </section>
             </div>
-            <a href="#">Bumbag Kim</a>
+            <a class="title-link" href="#">Bumbag Kim</a>
             <span class="pc-price">DKK 399,00</span>
           </article>
           <!-- copies -->
@@ -327,7 +219,7 @@
                 /></a>
               </section>
             </div>
-            <a href="#">Bumbag Kim</a>
+            <a class="title-link" href="#">Bumbag Kim</a>
             <span class="pc-price">DKK 399,00</span>
           </article>
           <article class="product-card carousel-cell">
@@ -345,7 +237,7 @@
                 /></a>
               </section>
             </div>
-            <a href="#">Bumbag Kim</a>
+            <a class="title-link" href="#">Bumbag Kim</a>
             <span class="pc-price">DKK 399,00</span>
           </article>
           <article class="product-card carousel-cell">
@@ -363,7 +255,7 @@
                 /></a>
               </section>
             </div>
-            <a href="#">Bumbag Kim</a>
+            <a class="title-link" href="#">Bumbag Kim</a>
             <span class="pc-price">DKK 399,00</span>
           </article>
           <article class="product-card carousel-cell">
@@ -381,7 +273,7 @@
                 /></a>
               </section>
             </div>
-            <a href="#">Bumbag Kim</a>
+            <a class="title-link" href="#">Bumbag Kim</a>
             <span class="pc-price">DKK 399,00</span>
           </article>
           <article class="product-card carousel-cell">
@@ -399,7 +291,7 @@
                 /></a>
               </section>
             </div>
-            <a href="#">Bumbag Kim</a>
+            <a class="title-link" href="#">Bumbag Kim</a>
             <span class="pc-price">DKK 399,00</span>
           </article>
         </section>
@@ -533,5 +425,6 @@
     <script src="scripts/slider.js"></script>
     <script src="scripts/flickity.pkgd.min.js"></script>
     <script src="scripts/api.js"></script>
+    <script src="scripts/home-list.js"></script>
   </body>
 </html>
