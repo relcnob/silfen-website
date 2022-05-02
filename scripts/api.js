@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
-const url = "https://amorea.dk/WP/silfen/wp-json/wp/v2/product/46";
+const url = "https://amorea.dk/WP/silfen/wp-json/wp/v2/product/" + id;
 
 fetch(url)
   .then((res) => res.json())

@@ -186,28 +186,31 @@
       </section>
 
       <section class="pl-wrapper">
+        <template id="product-card-template">
+          <article class="product-card">
+            <div class="pc-wrapper">
+              <div class="pc-add-to-cart">Add to cart</div>
+              <section class="pc-colors">
+                <span class="pc-color c-lightblue c-selected"></span>
+                <span class="pc-color c-red"></span>
+              </section>
+              <section class="pc-image">
+                <a href="productPage.html"
+                  ><img
+                    src="assets//img/placeholder-bag.jpg"
+                    alt="product-name"
+                /></a>
+              </section>
+            </div>
+            <a class="title-link" href="productPage.html">Bumbag Kim</a>
+            <span class="pc-price">DKK 399,00</span>
+          </article>
+        </template>
         <!-- products -->
       </section>
     </main>
     <!-- footer -->
-    <template id="product-card-template">
-      <article class="product-card">
-        <div class="pc-wrapper">
-          <div class="pc-add-to-cart">Add to cart</div>
-          <section class="pc-colors">
-            <span class="pc-color c-lightblue c-selected"></span>
-            <!-- <span class="pc-color c-red"></span> -->
-          </section>
-          <section class="pc-image">
-            <a href=""
-              ><img src="assets//img/placeholder-bag.jpg" alt="product-name"
-            /></a>
-          </section>
-        </div>
-        <a href="productPage.html">Bumbag Kim</a>
-        <span class="pc-price">DKK 399,00</span>
-      </article>
-    </template>
+
     <footer>
       <section class="footer-newsletter-signup">
         <h1>COME JOIN US, SUBSCRIBE HERE!</h1>
@@ -284,7 +287,7 @@
     <script src="scripts/burger.js"></script>
     <script src="scripts/slider.js"></script>
     <script src="scripts/flickity.pkgd.min.js"></script>
-    <script src="scripts/api.js"></script>
+    <script src="scripts/shop-list.js"></script>
     <script src="scripts/pl-filtering.js"></script>
   </body>
 </html>
