@@ -900,10 +900,22 @@ footer a {
 }
 
 .c-lightblue {
-  background: #43baff;
+  background: #80c1e7;
+}
+.c-blue {
+  background: #145fe9;
 }
 .c-red {
-  background: rgb(235, 13, 13);
+  background: #eb0d0d;
+}
+.c-pink {
+  background: #ff84cc;
+}
+.c-lime {
+  background: #74db54;
+}
+.c-yellow {
+  background: #eed689;
 }
 
 .c-selected:before {

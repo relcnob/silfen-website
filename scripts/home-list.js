@@ -1,5 +1,6 @@
 const url3 = "https://amorea.dk/WP/silfen/wp-json/wp/v2/product?per_page=8";
 
+let carouselNumber = 0;
 fetch(url3)
   .then((res) => res.json())
   .then((data) => handleHomeProductList(data));
@@ -23,7 +24,10 @@ function showHomeProductList(product) {
     .querySelector(".title-link")
     .setAttribute("href", `productPage.html?id=${product.id}`);
   console.log(myClone.querySelector(".title-link"));
-
+  myClone
+    .querySelector(".pc-image a")
+    .setAttribute("href", `productPage.html?id=${product.id}`);
+  console.log(myClone.querySelector(".title-link"));
   myClone.querySelector(".pc-price").textContent = "DKK " + product.price;
   myClone.querySelector(".pc-image a img").src = product.image.guid;
   //remember to write down the right selector
