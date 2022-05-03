@@ -25,7 +25,7 @@ var options2 = {
   fill: {
     type: "image",
     image: {
-      src: ["/assets/img/water-texture.jpg"],
+      src: ["assets/img/water-texture.jpg"],
       width: undefined, // optional
       height: undefined, //optional
     },
