@@ -917,7 +917,9 @@ footer a {
 .c-yellow {
   background: #eed689;
 }
-
+.c-paleblue {
+  background: #90d0d8;
+}
 .c-selected:before {
   position: absolute;
   height: 22px;
