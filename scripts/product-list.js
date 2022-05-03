@@ -32,7 +32,18 @@ function showProductList(product) {
 
   myClone.querySelector(".pc-price").textContent = "DKK " + product.price;
   myClone.querySelector(".pc-image a img").src = product.image.guid;
+  console.log(pcColors);
+  pcColors.forEach((color) => {
+    const span = document.createElement("span");
+    span.textContent = " ";
+    span.setAttribute("class", "c-" + color + " pc-color");
+    console.log(span);
+    myClone.querySelector(".pc-colors").appendChild(span);
+  });
 
+  myClone
+    .querySelector(".pc-colors span:first-child")
+    .classList.add("c-selected");
   //select parent
   const parent = document.querySelector(".related-products");
   //append child
