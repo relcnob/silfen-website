@@ -10,6 +10,8 @@ sliderRight.addEventListener("click", () => {
   updateSlide();
 });
 
+setInterval(updateSlide, 5000);
+
 function updateSlide() {
   if (activeSlide == 1) {
     document.querySelector(".slide-1").classList.add("slide-visible");
