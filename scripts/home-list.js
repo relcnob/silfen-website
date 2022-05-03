@@ -31,6 +31,7 @@ function showHomeProductList(product) {
   console.log(myClone.querySelector(".title-link"));
   myClone.querySelector(".pc-price").textContent = "DKK " + product.price;
   myClone.querySelector(".pc-image a img").src = product.image.guid;
+  myClone.querySelector(".secondary-image").src = product.secondary_image.guid;
   //remember to write down the right selector
   // colors
 
