@@ -837,7 +837,7 @@ footer a {
 
 .pc-wrapper {
   background-color: #f2f2f2;
-  padding: 0rem 0 3rem 0;
+  padding: 0 0 3rem 0;
   margin: 0.5rem 0;
   position: relative;
 }
@@ -853,6 +853,10 @@ footer a {
 
 .pc-image a img:first-of-type:hover {
   opacity: 0;
+}
+
+.pc-image a {
+  padding-bottom: 3rem;
 }
 
 .carousel-cell .pc-image a img:first-of-type:hover {
@@ -892,6 +896,7 @@ footer a {
   cursor: pointer;
   opacity: 0;
   transition: 0.5s ease-in-out;
+  pointer-events: none;
 }
 
 .pc-wrapper:hover .pc-add-to-cart {
