@@ -10,7 +10,7 @@ sliderRight.addEventListener("click", () => {
   updateSlide();
 });
 
-setInterval(updateSlide, 5000);
+setInterval(updateSlide, 4000);
 
 function updateSlide() {
   if (activeSlide == 1) {

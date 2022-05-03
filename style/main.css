@@ -855,6 +855,10 @@ footer a {
   opacity: 0;
 }
 
+.carousel-cell .pc-image a img:first-of-type:hover {
+  opacity: 1;
+}
+
 .secondary-image {
   position: absolute;
   left: 0;
