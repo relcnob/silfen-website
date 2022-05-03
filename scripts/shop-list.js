@@ -22,10 +22,10 @@ function showShopList(product) {
   myClone.querySelector(".title-link").textContent = product.product_name;
   myClone
     .querySelector(".title-link")
-    .setAttribute("href", `productPage.html?id=${product.id}`);
+    .setAttribute("href", `productpage.html?id=${product.id}`);
   myClone
     .querySelector(".pc-image a")
-    .setAttribute("href", `productPage.html?id=${product.id}`);
+    .setAttribute("href", `productpage.html?id=${product.id}`);
   console.log(myClone.querySelector(".pc-image a"));
 
   myClone.querySelector(".pc-price").textContent = "DKK " + product.price;

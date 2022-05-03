@@ -22,10 +22,14 @@ chart.render();
 
 // water chart
 var options2 = {
-  colors: [
-    `#EDFF00
-	  `,
-  ],
+  fill: {
+    type: "image",
+    image: {
+      src: ["../assets/img/water-texture.jpg"],
+      width: undefined, // optional
+      height: undefined, //optional
+    },
+  },
   series: [2700, 55],
   chart: {
     height: 350,
