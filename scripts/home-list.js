@@ -16,6 +16,7 @@ function showHomeProductList(product) {
   //grab template
   const template = document.querySelector(".template-products").content;
 
+  let pcColors = product.color.split(" ");
   //clone it
   const myClone = template.cloneNode(true);
   //change data
@@ -30,7 +31,21 @@ function showHomeProductList(product) {
   console.log(myClone.querySelector(".title-link"));
   myClone.querySelector(".pc-price").textContent = "DKK " + product.price;
   myClone.querySelector(".pc-image a img").src = product.image.guid;
+  myClone.querySelector(".secondary-image").src = product.secondary_image.guid;
   //remember to write down the right selector
+  // colors
+
+  console.log(pcColors);
+  pcColors.forEach((color) => {
+    const span = document.createElement("span");
+    span.textContent = " ";
+    span.setAttribute("class", "c-" + color + " pc-color");
+    console.log(span);
+    myClone.querySelector(".pc-colors").appendChild(span);
+  });
+  myClone
+    .querySelector(".pc-colors span:first-child")
+    .classList.add("c-selected");
 
   //select parent
   const parent = document.querySelector(".home-productlist");

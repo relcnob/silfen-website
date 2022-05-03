@@ -16,6 +16,7 @@ function showProductList(product) {
   //grab template
   const template = document.querySelector(".template-products").content;
 
+  let pcColors = product.color.split(" ");
   //clone it
   const myClone = template.cloneNode(true);
   //change data
@@ -27,7 +28,6 @@ function showProductList(product) {
 
   myClone.querySelector(".pc-price").textContent = "DKK " + product.price;
   myClone.querySelector(".pc-image a img").src = product.image.guid;
-  //remember to write down the right selector
 
   //select parent
   const parent = document.querySelector(".related-products");

@@ -844,6 +844,22 @@ footer a {
 
 .pc-image {
   filter: contrast(90%);
+  position: relative;
+}
+
+.pc-image a img {
+  transition: 0.5s ease-in-out;
+}
+
+.pc-image a img:first-of-type:hover {
+  opacity: 0;
+}
+
+.secondary-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .product-card a {
@@ -917,7 +933,9 @@ footer a {
 .c-yellow {
   background: #eed689;
 }
-
+.c-paleblue {
+  background: #90d0d8;
+}
 .c-selected:before {
   position: absolute;
   height: 22px;
