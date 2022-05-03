@@ -31,6 +31,7 @@ main {
   border-radius: 50%;
   padding: 1rem;
   transform: rotate(90deg);
+  opacity: 0;
 }
 
 .sus-video-wrapper:before {
@@ -260,6 +261,10 @@ main {
   .acc-materials {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .scrolldown {
+    opacity: 1;
   }
 }
 
