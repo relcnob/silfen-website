@@ -48,7 +48,7 @@ main {
   font-size: 2rem;
 }
 
-.sus-video-wrapper iframe {
+.sus-video-wrapper video {
   width: 100%;
   aspect-ratio: 16/9;
   pointer-events: none;
